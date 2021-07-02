@@ -42,6 +42,7 @@ class RemoteConfigService {
             
             RemoteConfig.remoteConfig().activate { [weak self] _, _ in
                 self?.fetchComplete = true
+                print("remote config true")
                 completionHandler()
             }
         }

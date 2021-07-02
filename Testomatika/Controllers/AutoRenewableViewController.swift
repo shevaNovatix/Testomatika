@@ -69,7 +69,7 @@ class AutoRenewableViewController: MainViewController {
                     SwiftyStoreKit.finishTransaction(purchase.transaction)
                 }
                 
-                let appleValidator = AppleReceiptValidator(service: .sandbox, sharedSecret: "5bc31f560bc249ddbff514b174635567")
+                let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: "5bc31f560bc249ddbff514b174635567")
                 SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
                     
                     if case .success(let receipt) = result {
@@ -149,11 +149,12 @@ class AutoRenewableViewController: MainViewController {
     
     private func configureButtons(product: SKProduct) {
         var title = ""
-        
+        print("product title = \(productID)")
         if productID == IAPProducts.autoRenewableTrial.rawValue {
             title = product.localizedTitle
         } else {
-            title = priceForString(product: product) + " / week"
+            let price = priceForString(product: product)
+            title = "Subscribe for \(price)"
         }
     
         self.purchaseButton.setTitle(title, for: .normal)

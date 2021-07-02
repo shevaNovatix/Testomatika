@@ -13,6 +13,7 @@ class SplashViewController: MainViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showSpiner()
+        
         RemoteConfigService.shared.fetchCloudValues { [weak self] in
             guard let self = self else { return }
             if RemoteConfigService.shared.fetchComplete {

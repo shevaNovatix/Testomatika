@@ -51,7 +51,7 @@ class IAPManager {
         SwiftyStoreKit.fetchReceipt(forceRefresh: true) { result in
             switch result {
             case .success(_):
-                let appleValidator = AppleReceiptValidator(service: .sandbox, sharedSecret: "5bc31f560bc249ddbff514b174635567")
+                let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: "5bc31f560bc249ddbff514b174635567")
                 SwiftyStoreKit.verifyReceipt(using: appleValidator) { result in
                     
                     if case .success(let receipt) = result {
