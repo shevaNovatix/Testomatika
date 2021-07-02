@@ -608,6 +608,7 @@
 				CODE_SIGN_ENTITLEMENTS = Testomatika/Testomatika.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4686RK5SML;
 				INFOPLIST_FILE = Testomatika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -632,6 +633,7 @@
 				CODE_SIGN_ENTITLEMENTS = Testomatika/Testomatika.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 4686RK5SML;
 				INFOPLIST_FILE = Testomatika/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
