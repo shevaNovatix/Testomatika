@@ -16,7 +16,6 @@ class StartViewController: UIViewController {
         }
     }
     
-    
     private var quiz: Quiz? {
         UserDefaultsManager.shared.currentQuiz
     }

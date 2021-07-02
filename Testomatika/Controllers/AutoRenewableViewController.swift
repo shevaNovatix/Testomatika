@@ -15,9 +15,10 @@ import JGProgressHUD
 class AutoRenewableViewController: MainViewController {
      
     @IBOutlet weak var purchaseButton: MainButton!
-    @IBOutlet weak var restorePurchaseButton: MainButton!
+    @IBOutlet weak var restorePurchaseButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var subscribeLabel: UILabel!
     
     private let userDefaults = UserDefaultsManager.shared
     
@@ -32,11 +33,17 @@ class AutoRenewableViewController: MainViewController {
         return nil
     }
     
+    private func configureRestoreButton() {
+        restorePurchaseButton.backgroundColor = .clear
+//        restorePurchaseButton
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.attributedText = NSAttributedString.textViewText()
         textView.linkTextAttributes = NSAttributedString.linkAttributes()
         
+        subscribeLabel.addShadow()
         descriptionLabel.addShadow()
         
         AppEvents.logEvent(.initiatedCheckout)
@@ -148,13 +155,11 @@ class AutoRenewableViewController: MainViewController {
     }
     
     private func configureButtons(product: SKProduct) {
-        var title = ""
-        print("product title = \(productID)")
+        let price = priceForString(product: product)
+        let title = "Subscribe for \(price)"
+        
         if productID == IAPProducts.autoRenewableTrial.rawValue {
-            title = product.localizedTitle
-        } else {
-            let price = priceForString(product: product)
-            title = "Subscribe for \(price)"
+            subscribeLabel.isHidden = false
         }
     
         self.purchaseButton.setTitle(title, for: .normal)

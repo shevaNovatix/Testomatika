@@ -191,6 +191,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="P7V-aO-Xsf"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -198,10 +199,19 @@
                                             <action selector="purchaseButtonAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="4As-gY-Lfj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-4w-J6z" customClass="MainButton" customModule="Testomatika" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-4w-J6z">
                                         <rect key="frame" x="0.0" y="60" width="374" height="50"/>
-                                        <state key="normal" title="Restore Purchase">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Restore Purchase">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <connections>
                                             <action selector="restorePurchaseAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="Uwl-9E-OK5"/>
@@ -226,19 +236,28 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start with a 3 days free trial." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-Ir-npz">
+                                <rect key="frame" x="20" y="634" width="374" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b4q-T4-Xkb"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
+                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="XCO-Ir-npz" secondAttribute="trailing" constant="20" id="0Vf-Nl-8jo"/>
                             <constraint firstItem="w5E-gN-aJ1" firstAttribute="centerY" secondItem="0we-Eh-Ito" secondAttribute="centerY" id="1tN-CA-zdv"/>
                             <constraint firstAttribute="trailing" secondItem="w5E-gN-aJ1" secondAttribute="trailing" constant="20" id="CC8-9r-HP9"/>
                             <constraint firstItem="zML-Kl-3GR" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="HqZ-Bu-txG"/>
                             <constraint firstItem="akX-1U-wvd" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="LNA-CJ-dVO"/>
+                            <constraint firstItem="akX-1U-wvd" firstAttribute="top" secondItem="XCO-Ir-npz" secondAttribute="bottom" constant="20" id="MNf-yD-7pi"/>
                             <constraint firstItem="b4q-T4-Xkb" firstAttribute="bottom" secondItem="zML-Kl-3GR" secondAttribute="bottom" constant="30" id="ZEf-Gg-KUO"/>
                             <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="akX-1U-wvd" secondAttribute="trailing" constant="20" id="hz7-1c-PdE"/>
                             <constraint firstItem="w5E-gN-aJ1" firstAttribute="leading" secondItem="0we-Eh-Ito" secondAttribute="leading" constant="20" id="iKU-6y-uPV"/>
                             <constraint firstItem="zML-Kl-3GR" firstAttribute="top" secondItem="akX-1U-wvd" secondAttribute="bottom" constant="20" id="neF-rs-dJV"/>
                             <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="zML-Kl-3GR" secondAttribute="trailing" constant="20" id="ohb-ev-Ly3"/>
+                            <constraint firstItem="XCO-Ir-npz" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="pQh-n8-NQ9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="10g-Bh-e18">
@@ -252,6 +271,7 @@
                         <outlet property="descriptionLabel" destination="w5E-gN-aJ1" id="Cca-FL-Ber"/>
                         <outlet property="purchaseButton" destination="5b3-Ut-6Uq" id="xM4-Gc-Ygh"/>
                         <outlet property="restorePurchaseButton" destination="lB3-4w-J6z" id="moZ-Wf-L8J"/>
+                        <outlet property="subscribeLabel" destination="XCO-Ir-npz" id="wuz-jE-KbK"/>
                         <outlet property="textView" destination="zML-Kl-3GR" id="mTz-Jj-6Zw"/>
                         <segue destination="yGT-EB-bqD" kind="show" identifier="consumableVC" id="cBc-Lz-UWh"/>
                     </connections>
