@@ -35,7 +35,6 @@ class AutoRenewableViewController: MainViewController {
     
     private func configureRestoreButton() {
         restorePurchaseButton.backgroundColor = .clear
-//        restorePurchaseButton
     }
     
     override func viewDidLoad() {
@@ -45,7 +44,7 @@ class AutoRenewableViewController: MainViewController {
         
         subscribeLabel.addShadow()
         descriptionLabel.addShadow()
-        
+    
         AppEvents.logEvent(.initiatedCheckout)
         Analytics.logEvent("initiatedCheckout", parameters: nil)
         
@@ -156,7 +155,7 @@ class AutoRenewableViewController: MainViewController {
     
     private func configureButtons(product: SKProduct) {
         let price = priceForString(product: product)
-        let title = "Subscribe for \(price)"
+        let title = "\(product.localizedTitle) for \(price) / week"
         
         if productID == IAPProducts.autoRenewableTrial.rawValue {
             subscribeLabel.isHidden = false

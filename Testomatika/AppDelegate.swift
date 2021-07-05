@@ -18,12 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
         FirebaseApp.configure()
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         requestPermission()
+        
         Installations.installations().authToken { result, _ in
           print("Your instance ID token is \(result?.authToken ?? "n/a")")
         }

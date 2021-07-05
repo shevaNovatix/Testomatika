@@ -183,47 +183,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="akX-1U-wvd">
-                                <rect key="frame" x="20" y="672" width="374" height="110"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b3-Ut-6Uq" customClass="MainButton" customModule="Testomatika" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="P7V-aO-Xsf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="purchaseButtonAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="4As-gY-Lfj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-4w-J6z">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Restore Purchase">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="15"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                        <integer key="NSUnderline" value="1"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <connections>
-                                            <action selector="restorePurchaseAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="Uwl-9E-OK5"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start with a 3 days free trial." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-Ir-npz">
+                                <rect key="frame" x="20" y="644" width="374" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b3-Ut-6Uq" customClass="MainButton" customModule="Testomatika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="682" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P7V-aO-Xsf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseButtonAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="4As-gY-Lfj"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zML-Kl-3GR">
-                                <rect key="frame" x="20" y="802" width="374" height="30"/>
+                                <rect key="frame" x="20" y="752" width="374" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="iJf-j9-wqX"/>
+                                    <constraint firstAttribute="height" constant="30" id="rLo-3f-4kF"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="TextView">
@@ -236,28 +219,43 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start with a 3 days free trial." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCO-Ir-npz">
-                                <rect key="frame" x="20" y="634" width="374" height="18"/>
-                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
-                                <color key="textColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-4w-J6z">
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Restore Purchase">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchaseAction" destination="mPl-Zu-rnZ" eventType="touchUpInside" id="Uwl-9E-OK5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b4q-T4-Xkb"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="XCO-Ir-npz" secondAttribute="trailing" constant="20" id="0Vf-Nl-8jo"/>
                             <constraint firstItem="w5E-gN-aJ1" firstAttribute="centerY" secondItem="0we-Eh-Ito" secondAttribute="centerY" id="1tN-CA-zdv"/>
+                            <constraint firstItem="5b3-Ut-6Uq" firstAttribute="top" secondItem="XCO-Ir-npz" secondAttribute="bottom" constant="20" id="69y-hn-lYb"/>
                             <constraint firstAttribute="trailing" secondItem="w5E-gN-aJ1" secondAttribute="trailing" constant="20" id="CC8-9r-HP9"/>
-                            <constraint firstItem="zML-Kl-3GR" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="HqZ-Bu-txG"/>
-                            <constraint firstItem="akX-1U-wvd" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="LNA-CJ-dVO"/>
-                            <constraint firstItem="akX-1U-wvd" firstAttribute="top" secondItem="XCO-Ir-npz" secondAttribute="bottom" constant="20" id="MNf-yD-7pi"/>
-                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="bottom" secondItem="zML-Kl-3GR" secondAttribute="bottom" constant="30" id="ZEf-Gg-KUO"/>
-                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="akX-1U-wvd" secondAttribute="trailing" constant="20" id="hz7-1c-PdE"/>
+                            <constraint firstItem="XCO-Ir-npz" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="Deb-Tq-0Y6"/>
+                            <constraint firstItem="zML-Kl-3GR" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="HAq-iF-w8i"/>
+                            <constraint firstAttribute="trailing" secondItem="zML-Kl-3GR" secondAttribute="trailing" constant="20" id="NUQ-aJ-v7m"/>
+                            <constraint firstItem="zML-Kl-3GR" firstAttribute="top" secondItem="5b3-Ut-6Uq" secondAttribute="bottom" constant="20" id="U6O-MJ-5EJ"/>
+                            <constraint firstItem="5b3-Ut-6Uq" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="YIr-22-4eg"/>
+                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="bottom" secondItem="lB3-4w-J6z" secondAttribute="bottom" constant="20" id="ZgR-rW-yJ4"/>
+                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="5b3-Ut-6Uq" secondAttribute="trailing" constant="20" id="eGV-8p-fef"/>
+                            <constraint firstItem="lB3-4w-J6z" firstAttribute="top" secondItem="zML-Kl-3GR" secondAttribute="bottom" constant="30" id="ewf-Ut-N4O"/>
                             <constraint firstItem="w5E-gN-aJ1" firstAttribute="leading" secondItem="0we-Eh-Ito" secondAttribute="leading" constant="20" id="iKU-6y-uPV"/>
-                            <constraint firstItem="zML-Kl-3GR" firstAttribute="top" secondItem="akX-1U-wvd" secondAttribute="bottom" constant="20" id="neF-rs-dJV"/>
-                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="zML-Kl-3GR" secondAttribute="trailing" constant="20" id="ohb-ev-Ly3"/>
-                            <constraint firstItem="XCO-Ir-npz" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="pQh-n8-NQ9"/>
+                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="XCO-Ir-npz" secondAttribute="trailing" constant="20" id="nIZ-qD-Gx5"/>
+                            <constraint firstItem="b4q-T4-Xkb" firstAttribute="trailing" secondItem="lB3-4w-J6z" secondAttribute="trailing" constant="20" id="owJ-kU-mC1"/>
+                            <constraint firstItem="lB3-4w-J6z" firstAttribute="leading" secondItem="b4q-T4-Xkb" secondAttribute="leading" constant="20" id="thQ-3i-pCF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="10g-Bh-e18">

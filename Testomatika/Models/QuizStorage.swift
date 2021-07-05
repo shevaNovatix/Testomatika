@@ -13,7 +13,7 @@ class QuizStorage {
         [
             Quiz(
                 title: "How do you know that your boyfriend is cheating on you?",
-                description: "Do you have mixed feelings and want to know if your partner is really not cheating on you? Takethis test to see if your boyfriend is being honest with you. It only takes a few minutes to complete. Are you ready to know what he's thinking?",
+                description: "Do you have mixed feelings and want to know if your partner is really not cheating on you? Take this test to see if your boyfriend is being honest with you. It only takes a few minutes to complete. Are you ready to know what he's thinking?",
                 questions: [
                     Question(text: "How often does your boyfriend spend the night at home?", answers: [
                         Answer(text: "Every night", scrore: 3),
