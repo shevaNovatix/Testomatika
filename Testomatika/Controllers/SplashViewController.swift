@@ -28,11 +28,6 @@ class SplashViewController: MainViewController {
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-//        showSpiner()
-    }
-    
     func showStartVC() {
         let index = RemoteConfigService.shared.int(forKey: .startVC)
         let quiz = QuizStorage.quizzes[index]
