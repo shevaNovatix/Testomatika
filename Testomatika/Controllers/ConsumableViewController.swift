@@ -93,10 +93,11 @@ class ConsumableViewController: MainViewController {
     
     private func configureButton(product: SKProduct) {
         let priceString = priceForString(product: product)
+        let titel = "Buy result for \(priceString)"
         
         descriptionLabel.text = "Stop! Don’t go! Get your test result for just \(priceString). You won’t need to subscribe to a monthly pay and this does not obligate you to register for anything. After just a few clicks, you will have the test results!"
         
-        self.purchaseButton.setTitle(product.localizedTitle, for: .normal)
+        self.purchaseButton.setTitle(titel, for: .normal)
         self.purchaseButton.isHidden = false
     }
     
