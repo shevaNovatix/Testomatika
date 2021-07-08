@@ -142,11 +142,6 @@ extension QuizViewController: AnswerViewDelegate {
         userDefaults.currentQuiz?.quizResult = calculateResult()
         
         if currentPage == questions.count - 1  {
-//            if UserDefaultsManager.shared.isSubscription {
-//                performSegue(withIdentifier: "resultVC", sender: nil)
-//            } else {
-//                performSegue(withIdentifier: "autoRenewableVC", sender: nil)
-//            }
             verify()
         } else {
             let viewFrame = questionsViews[currentPage].frame
@@ -174,7 +169,6 @@ extension QuizViewController: AnswerViewDelegate {
         
         if expiryDate < Date() {
             showSpiner()
-            self.performSegue(withIdentifier: "autoRenewableVC", sender: nil)
             
             IAPManager.shared.verifySubscription(productID: productID) { [weak self] result in
                 guard let self = self else { return }

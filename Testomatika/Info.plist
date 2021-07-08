@@ -15,20 +15,20 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb190857016304891</string>
+				<string>fb322378439546803</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
-	<string>190857016304891</string>
+	<string>322378439546803</string>
 	<key>FacebookDisplayName</key>
 	<string>Testomatika</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
