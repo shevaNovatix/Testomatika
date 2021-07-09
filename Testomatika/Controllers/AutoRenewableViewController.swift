@@ -155,7 +155,7 @@ class AutoRenewableViewController: MainViewController {
     
     private func configureButtons(product: SKProduct) {
         let priceString = priceForString(product: product)
-        let title = "Subscribe for \(priceString)"
+        let title = "Subscribe for \(priceString) / week"
         
         if productID == IAPProducts.autoRenewableTrial.rawValue {
             subscribeLabel.isHidden = false
