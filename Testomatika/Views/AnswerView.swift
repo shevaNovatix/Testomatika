@@ -84,10 +84,10 @@ class AnswerView: UIView {
     private func setupTextLabel() {
         addSubview(textLabel)
         
-        textLabel.font = Roboto.fetchFont(.regular, 20)
         textLabel.textColor = .black.withAlphaComponent(0.8)
         textLabel.numberOfLines = 0
         textLabel.translatesAutoresizingMaskIntoConstraints = false
+        textLabel.font = Roboto.fetchFontForCurrentDevice()
         
         NSLayoutConstraint.activate([
             textLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),

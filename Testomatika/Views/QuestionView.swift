@@ -17,7 +17,7 @@ class QuestionView: UIView {
         super.init(frame: frame)
         
         questionLabel.numberOfLines = 0
-        questionLabel.font = Roboto.fetchFont(.black, 22)
+        questionLabel.font = UIDevice.current.userInterfaceIdiom == .pad ? Roboto.fetchFont(.bold, 44) : Roboto.fetchFont(.bold, 22)
         questionLabel.textAlignment = .center
         questionLabel.textColor = .white
         questionLabel.addShadow()

@@ -6,8 +6,12 @@
 import UIKit
 
 struct ContextCellConstants {
-	static let featuredHeight: CGFloat = 280
-	static let standardHeight: CGFloat = 100
+    static var featuredHeight: CGFloat {
+        UIDevice.current.userInterfaceIdiom == .pad ? 560 : 280
+    }
+    static var standardHeight: CGFloat {
+        UIDevice.current.userInterfaceIdiom == .pad ? 300 : 100
+    }
 }
 
 class ResizableLayout: UICollectionViewLayout {

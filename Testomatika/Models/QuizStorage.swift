@@ -511,39 +511,435 @@ class QuizStorage {
             ),
             Quiz(
                 title: "Do you know how to flirt?",
-                description: "",
-                questions: [],
+                description: "Many women believe that they know how to flirt flawlessly, but one refusal puts them in a stupor. Find out if you know how to show sympathy for the opposite sex and how well you do it! Our test will help you determine your skill level in a matter of seconds. Try it now!",
+                questions: [
+                    Question(text: "You're at a party. There are a lot of men around, and quite a few of them are very attractive. What strategic position will you take?", answers: [
+                        Answer(text: "I will sit down with a glass of wine in a place where I can see everyone clearly and expect to be passed by a lot.", scrore: 2),
+                        Answer(text: "I'll make sure I'm in the middle of the group, so everyone can see and hear me.", scrore: 3),
+                        Answer(text: "I will choose a more private place so that I am not in plain sight: whoever needs me will find me!", scrore: 1)
+                    ]),
+                    Question(text: "You're sitting on a bus and some guy keeps staring at you. How does that make you feel?", answers: [
+                        Answer(text: "It all depends on how he looks.", scrore: 2),
+                        Answer(text: "Oh, great! I like it very much when people take an interest in me.", scrore: 3),
+                        Answer(text: "A lot of insecurity. I'll be red as a tomato.", scrore: 1)
+                    ]),
+                    Question(text: "In your mind, flirting is...", answers: [
+                        Answer(text: "A magazine with dubious content that is constantly placed on my car windscreen.", scrore: 1),
+                        Answer(text: "A very pleasant part of a man and a woman's conversation.", scrore: 3),
+                        Answer(text: "A way to mislead a man.", scrore: 2)
+                    ]),
+                    Question(text: "In the company of men you don't know well, you are...", answers: [
+                        Answer(text: "Confident and relaxed", scrore: 2),
+                        Answer(text: "Totally at ease", scrore: 3),
+                        Answer(text: "Clenched rather than relaxed", scrore: 1)
+                    ]),
+                    Question(text: "What qualities do men need in order to be liked?", answers: [
+                        Answer(text: "Look good.", scrore: 2),
+                        Answer(text: "Charming, interesting conversationalist..", scrore: 3),
+                        Answer(text: "I don't know, there are all kinds of men.", scrore: 1)
+                    ]),
+                    Question(text: "You have the wrong number. There's a nice man's voice on the phone. You:", answers: [
+                        Answer(text: "Tell the guy to get a job in radio.", scrore: 3),
+                        Answer(text: "Hang up.", scrore: 1),
+                        Answer(text: "Ask him who he is and what he did to my friend Vika!", scrore: 2)
+                    ]),
+                    Question(text: "To get your conversation partner to like you, which of these methods do you use?", answers: [
+                        Answer(text: "I'll smile and flirt a little.", scrore: 2),
+                        Answer(text: "Stare at his lips as he talks.", scrore: 3),
+                        Answer(text: "Nod understandingly and pretend that his problems matter to me.", scrore: 1)
+                    ]),
+                    Question(text: "What is scarier for you?", answers: [
+                        Answer(text: "Waking up in someone else's flat after casual sex.", scrore: 2),
+                        Answer(text: "If a guy turns around and leaves in the middle of the date.", scrore: 3),
+                        Answer(text: "Being alone on a Friday night.", scrore: 1)
+                    ]),
+                    Question(text: "When you flirt with someone, it's literally the first minutes that decide everything. You either win him over or you lose. What do you think brings success?", answers: [
+                        Answer(text: "The first sentence", scrore: 2),
+                        Answer(text: "Everything is decided by \"chemistry\" - all those hormones and stuff. If the chemistry is there, then you'll be fine.", scrore: 1),
+                        Answer(text: "Body language.", scrore: 3)
+                    ]),
+                    Question(text: "How long do you wait before replying to a message from a man you like?", answers: [
+                        Answer(text: "I answer right away.", scrore: 3),
+                        Answer(text: "When it's convenient, that's when I answer.", scrore: 1),
+                        Answer(text: "Let him suffer for an hour or two.", scrore: 2)
+                    ]),
+                    Question(text: "Do you want to change something about yourself?", answers: [
+                        Answer(text: "No, I like myself.", scrore: 3),
+                        Answer(text: "Everything? I don't like myself at all.", scrore: 1),
+                        Answer(text: "I don't know.", scrore: 2)
+                    ]),
+                    Question(text: "He says you look great today. Your reaction:", answers: [
+                        Answer(text: "I will say that I am like this all the time, not just today!", scrore: 2),
+                        Answer(text: "I'll be modestly silent.", scrore: 1),
+                        Answer(text: "I thanked him for the compliment and said something nice back.", scrore: 3)
+                    ])
+                ],
                 backgroundItem: "5",
                 backgroundView: "55",
-                isOpen: false,
-                responseRanges: []
+                isOpen: true,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 12...18,
+                        title: "You absolutely can't flirt",
+                        description: """
+                            You are a shy, very reserved person who has trouble showing emotion. You don't like it when someone is excessively interested in you. Of course, deep down you would like to be looked at more by the opposite sex and adored, but you find it very difficult to admit it. You often ignore people’s attempts to flirt with you.
+                            
+                            Maybe it's because you can't do it yourself. But you need to learn. Perhaps you should start learning how to flirt through social media.We have no problem noticing our interlocutor’s reactions to our words by their facial expressionsor glances when engaging in face-to-face communication. It's worth asking for details, and stressing your interest.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 19...23,
+                        title: "You need to work on it",
+                        description: """
+                            Obviously, you're either too shy or you start to overcomplicate things when things get interesting. Smile more, especially with your eyes. If you hesitate to say it out loud, say it with your eyes.You are characterized by absolute democracy in your relationships.
+                            
+                            You are not restricted by any attitudes about relationships, including sexual ones. You don't mind trying out new things and are inclined to experiment. However, a lot of freedom can get in the way of keeping a man close to you. You may need to change your strategy for someone you want to be around all the time. Imposing some restrictions may even be beneficial.
+                            
+                            The advice, according to scientists, is that fleeting touches are the most effective flirting technique. Touching the face is considered intimate and not always welcome. A pat on the shoulder and a handshake are perceived by people as friendly gestures, which means they are of little use in the difficult business of flirting. If you want your "object" to be remembered and liked, touch his shoulder or forearm lightly.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 24...28,
+                        title: "You're getting good at flirting",
+                        description: """
+                            In general, you know how to flirt. You're used to not relying on opportunities to find happiness. You know how to keep a conversation going, and when you hear compliments, you certainly don't get lost in them. But at the same time, it's all limited to casual flirting. You lack spontaneity and imagination.Let me put it another way: flirting requires intelligence, emotional intelligence, empathy, and interest in other people, which is hard to find these days.Allow yourself to step out of your comfort zone and try something new.
+                            
+                            If you are endowed with a subtle sense of humor and are not shy to sometimes distinguish yourself in a conversation with a "certain" joke, then you will master the art of flirting easily.Never be afraid to crack a joke. A good joke will lighten the mood and brighten up a dull day.Be sure you're the beautiful one! Smile and look around. You'll find men to flirt with right away. And it does not matter how long you've been in the beauty salon and whether you have a fashionable outfit. Down with complexes and self-doubt! Remember that the opposite sex will always find you attractive.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 29...32,
+                        title: "You know what the boys like",
+                        description: """
+                            Sometimes we flirt to build or maintain our good mood, to win someone's sympathy, or to diversify a relationship (called casual flirting). Some people have the ability to flirt in their blood, while others learn this with time, age, experience - when their self-esteem and therefore their self-confidence increases. You recognize strengths in yourself, such as personal charm, as well as freedom, a smile, distance to yourself, peace (no one likes neurotic or aggressive people).
+                            
+                            You also have the ability to carry on interesting conversations, give compliments, and meet the other party's expectations while still being yourself.If you're confident in your attractiveness, flirting will be easy and fun for you.
+                            
+                            It might be worth joking around with a man, as it's already an unobtrusive flirtation with him. Now let flirtatiousness and charm come into play and joke around with gusto. But remember, you should not ridicule your companion, and do not laugh at the shortcomings of others. Cute jokes on disparate topics are enough for flirting.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 33...36,
+                        title: "You are a flirting goddess",
+                        description: """
+                            Fantastic! You have a natural gift for flirting! Perhaps you should start your own flirting classes?You make the impossible possible. In addition, you know how to show your interest by listening carefully to other individuals. But at the same time, the person who puts the least effort in your direction cannot win your ardent heart. In short, that's right!
+                            
+                            You love the thrill of male and female role-play, so you always need to renew and gain energy by communicating and flirting with the opposite sex. You are a very sociable person, also quite confident as you know how to present yourself attractively. At the same time you have a good intellect and are an interesting conversationalist. You adore being the center of attention. The greedy look of the guys doesn't make you crazy at all. On the contrary! You love to be loved andgiven lots of attention. You take advantage of sessions at every opportunity and you're great at it.
+                            """
+                    ),
+                ]
             ),
             Quiz(
                 title: "Is your boyfriend suitable as a husband?",
-                description: "",
-                questions: [],
+                description: "Are you head over heels in love with your boyfriend and want to know if he is suitable husband material? It's a practical question, so don't avoid it. Take our quiz to find out if your partner couldbe the right husband for you. Let’s get started.",
+                questions: [
+                    Question(text: "Do you and your partner have the same social levels?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "Which of the following do you find most remarkable about your partner?", answers: [
+                        Answer(text: "His intelligence and resourcefulness.", scrore: 3),
+                        Answer(text: "His authority among his colleagues", scrore: 1),
+                        Answer(text: "His sexuality and beauty.", scrore: 2)
+                    ]),
+                    Question(text: "How has your partner reacted to the suspicion of pregnancy?", answers: [
+                        Answer(text: "Worried as you were while waiting for the test results.", scrore: 3),
+                        Answer(text: "Claimed to have been extremely careful during intimacy and reassured you.", scrore: 2),
+                        Answer(text: "He was very anxious and kept asking you if your period had started.", scrore: 1)
+                    ]),
+                    Question(text: "Does your partner's relationship with your mother/brother annoy you?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "Describe his behaviour when the conversation turns to his parents.", answers: [
+                        Answer(text: "He answers questions about his parents with warmth.", scrore: 2),
+                        Answer(text: "He acts annoyed.", scrore: 1),
+                        Answer(text: "He rejoices and speaks of his parents with love.", scrore: 3)
+                    ]),
+                    Question(text: "Do you enjoy touching your partner's toes in bed?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "How does your partner react to your doubts about the relationship?", answers: [
+                        Answer(text: "Pretends all is well, but suffers for your doubts.", scrore: 2),
+                        Answer(text: "Gives me time to think about it by pulling away for a while.", scrore: 1),
+                        Answer(text: "He is sure of his feelings and keeps courting.", scrore: 3)
+                    ]),
+                    Question(text: "How does your partner react when you interrupt your reasoning without finishing?", answers: [
+                        Answer(text: "Patiently waits for you to finish.", scrore: 3),
+                        Answer(text: "Finishes a sentence for you.", scrore: 2),
+                        Answer(text: "Getting annoyed.", scrore: 1)
+                    ]),
+                    Question(text: "Does your partner take your hand or hug you when you meet someone in the street?", answers: [
+                        Answer(text: "No", scrore: 1),
+                        Answer(text: "Yes", scrore: 2)
+                    ]),
+                    Question(text: "Did you notice a lot of overlap when your relationship with your partner began?", answers: [
+                        Answer(text: "No", scrore: 1),
+                        Answer(text: "Yes", scrore: 2)
+                    ]),
+                    Question(text: "Do you talk during intimacy with your partner?", answers: [
+                        Answer(text: "No", scrore: 1),
+                        Answer(text: "Yes", scrore: 2)
+                    ]),
+                    Question(text: "How do you deal with your partner's shortcomings?", answers: [
+                        Answer(text: "I accept him as he is, with all his virtues and flaws.", scrore: 3),
+                        Answer(text: "I put up with it for a while, but then I put the problem of shortcomings on the table.", scrore: 2),
+                        Answer(text: "I hope that he will change in the future.", scrore: 1)
+                    ]),
+                    Question(text: "Do you like your partner's behavior at the dinner table?", answers: [
+                        Answer(text: "No", scrore: 2),
+                        Answer(text: "Yes", scrore: 3),
+                    ]),
+                    Question(text: "Which of these people will be the first to hear about your promotion at work?", answers: [
+                        Answer(text: "Close friends.", scrore: 2),
+                        Answer(text: "Your partner.", scrore: 3),
+                        Answer(text: "Parents.", scrore: 1)
+                    ]),
+                    Question(text: "How would you react if your partner told you that he was going to spend the whole weekend out of town with friends?", answers: [
+                        Answer(text: "I remind him that his weekend is already taken up with a trip to a mutual acquaintance, as you agreed.", scrore: 2),
+                        Answer(text: "I'll start thinking about the best way to get him and I together in the future, like goingabroad.", scrore: 1),
+                        Answer(text: "No way, because he has nothing against you going out with your girlfriends, either.", scrore: 3)
+                    ]),
+                    Question(text: "How does your partner react to a cranky child with her mom passing by?", answers: [
+                        Answer(text: "He reacts quite calmly - so far such problems don't bother him.", scrore: 2),
+                        Answer(text: "He gets annoyed and turns away. He is not happy about this kind of picture.", scrore: 1),
+                        Answer(text: "Smiles and takes your hand.", scrore: 3)
+                    ]),
+                    Question(text: "What would happen if you and your partner suddenly broke up?", answers: [
+                        Answer(text: "I would grieve this loss for a long time.", scrore: 2),
+                        Answer(text: "I would grieve for a while, but soon I would go out with someone.", scrore: 3),
+                        Answer(text: "I would soon have a new partner.", scrore: 1)
+                    ]),
+                    Question(text: "What does your intuition say about your partner?", answers: [
+                        Answer(text: "That you have to hold on tight to it.", scrore: 2),
+                        Answer(text: "Nothing.", scrore: 1),
+                        Answer(text: "Just the good stuff.", scrore: 3)
+                    ]),
+                    Question(text: "How do you imagine your partner in your best dreams?", answers: [
+                        Answer(text: "The way I saw him on our first date.", scrore: 1),
+                        Answer(text: "He is working and making progress.", scrore: 2),
+                        Answer(text: "He plays with your child.", scrore: 3)
+                    ]),
+                    Question(text: "Describe your partner's behavior when they are watching their favorite team play.", answers: [
+                        Answer(text: "Shows his love for this team by shouting, stomping, and clapping, even if it's a replayon TV.", scrore: 2),
+                        Answer(text: "Explains to me what is happening on the pitch in a much more interesting way than what it actually looks like.", scrore: 3),
+                        Answer(text: "He stares very intently at the screen.", scrore: 1)
+                    ])
+                ],
                 backgroundItem: "6",
                 backgroundView: "66",
-                isOpen: false,
-                responseRanges: []
+                isOpen: true,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 20...29,
+                        title: "Your boyfriend is a persistent bachelor",
+                        description: """
+                            Your man is not yet ready for married life. Maybe there is no need to rush into buying an engagement ring.A person who is serious about the future and wants to start a family will try to become independent and employed anyway. That is why he will try to be self-sufficient. Remember that when a child is born, it comes with a package that says “responsibility”. Your partner is obviously not quite ready for that yet.
+                            
+                            He still needs time to find himself and understand the true value of marriage.It's not very sensible to imagine your family with a man who could risk losing your love for one night with another. If your partner has failed to say no to yourself once, there is a high percentage that history can repeat itself after marriage.
+                            
+                            Tip: Psychologists point out that a lack of mutual trust destroys relationships. Especially when a woman plays the role of detective and watches her partner's every move.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 30...39,
+                        title: "A guy would do anything for you and he tries",
+                        description: """
+                            The most important thing is that your partner is open to compromise and is willing to do anythingfor you. In a relationship, it is essential to know who makes the decision. As a rule, men want to make decisions - there is nothing wrong with that if he always asks you for your opinion and caneasily change his mind when you strongly disagree. That's a very good thing!
+                            
+                            The two of you have plans together that not only cover the next week, but include, for example, the next year. Your partner knows exactly what you want to do in 5-10 years. He or she realizes what your plans and dreams are. Are you sure your future husband is fully prepared to start a family or is this just a fairy tale and manipulation on his part?Golden tip:
+                            
+                            Remember one thing - marriage is about compromise! The willingness to talk and agree on common ground determines its longevity. By following this rule you can create a relationship built on mutual trust and love.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 40...46,
+                        title: "Your boyfriend is about to mature",
+                        description: """
+                            Congratulations! Just a little longer and he can definitely propose to you. What can guarantee that? Your boyfriend takes care of you, this can manifest in, for example, if he takes care of you when you are sickWhat happens when you are home sick? Does he visit you, give you tea, do your shopping? Marriage is about being together, for better or for worse, healthy and sick to death. Old-fashioned, but true.
+                            
+                            If he wants to introduce you to his friends and parents.If he wants to get to know your friends, it means he wants to deepen your relationship. And if healso wants to get to know your parents and siblings, he wonders if it's worth becoming part of the family.Every other guy will start saying "we" after a few months, which means that your relationship has deepened, you are starting to form a harmonious team.
+                            
+                            When a man asks where you would like to go on holiday next year, it is a clear signal that the relationship is a permanent element in a life changing experience.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 47...53,
+                        title: "Your boyfriend is 100% ready",
+                        description: """
+                            He is independent, financially stable, and able to save money.Research clearly shows that a person who has his own money and a job enough to abstain is generally ready for marriage. Financial independence means that a person is doing well, so legalizing the relationship would be the next logical step.
+                            
+                            A man who is willing to share his own money with his parents and siblings in marriage will be just as generous with his wife and children. Responsible handling of financial matters is a very important trait of a future husband. Pay attention to whether your partner's income is relatively constant and how much he saves. Even if he earns a lot but spends everything, this is not a good sign.
+                            
+                            So you can be sure that you have chosen a reliable partner for your future life together, gradually taking steps together to create a close-knit family!
+                            """
+                    ),
+                
+                ]
             ),
             Quiz(
                 title: "What celebrities do you look like?",
                 description: "",
-                questions: [],
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
                 backgroundItem: "7",
                 backgroundView: "77",
                 isOpen: false,
-                responseRanges: []
+                responseRanges: [
+                    ResponseRanges(
+                        range: 47...53,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
             ),
             Quiz(
                 title: "Are you a victim or a hunter?",
-                description: "",
-                questions: [],
+                description: "Do you feel that you are often manipulated? Or perhaps you find that you always get what you want? Find out if you are a victim or a predator. Take our quiz now and get a guide to action! It only takes five minutes.",
+                questions: [
+                    Question(text: "Even if someone allows themselves to say nasty things about you, you will never stoop to thesame behavior?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "Your friends took a road trip and you weren't invited. Are you going to be mad?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "If your stockings had a laceration and had to be urgently sewn up, would you ever wear them again in the future?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "If a guy you really like has a wife or girlfriend, would you flirt with him in her absence?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "Do you think things like miniskirts, tops, and plunging necklines are just cheap tricks to get guys' attention?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "A young man has invited you to a film you don't want to watch. Will you go?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "If you see a posh lady and a muscular guy getting out of a luxury foreign car, do you envy her?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "A friend has hurt you badly. Will you keep in touch with her?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "If, when you go to a concert in your favorite miniskirt, you see all the ladies around you in an evening dress, will you leave the event?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "While dancing with a guy, he keeps talking about your friend and how great she is. Will you keep dancing with him?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "You like a new lipstick at the makeup shop, but your best friend says it doesn't suit you. Will you buy this lipstick?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "If your boyfriend asks your friend to a dance at the club, will you be offended and go home?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "If, when you go out, you realize that you have overdone your makeup, do you go home to redo it?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "If your friends can't decide on a suitable dress before the prom, will you choose the last dress that doesn't look like the others so as not to offend anyone?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "If you and your friend are going to a concert and she asks you to lend her your earrings, even though you wanted to wear them yourself, would you give them to her?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "Imagine you are going to an event with lots of interesting people, but there will also be a girl who hates you and is always nasty. Would you go to the event?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "Do you know what you want out of life?", answers: [
+                        Answer(text: "Yes", scrore: 2),
+                        Answer(text: "No", scrore: 1)
+                    ]),
+                    Question(text: "If you like a dress in a shop that looks a lot like your friend's, would you refuse to buy it to avoid upsetting your friend?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ]),
+                    Question(text: "If someone spills a drink on your dress at a party, will you go straight home, losing all desire to have fun?", answers: [
+                        Answer(text: "Yes", scrore: 1),
+                        Answer(text: "No", scrore: 2)
+                    ])
+                ],
                 backgroundItem: "8",
                 backgroundView: "88",
-                isOpen: false,
-                responseRanges: []
+                isOpen: true,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 19...23,
+                        title: "You are a victim and it bothers you",
+                        description: """
+                            Psychological violence can slowly creep into relationships between partners, colleagues, and friends, gradually destroying your self-esteem and self-confidence. Such signals may be subtle, but if you have already noticed such an attitude toward yourself, it is better to be vigilant and intervene immediately.
+                            
+                            Usually, you can't talk about what's hurting you and you often feel helpless or maybe just controlling your emotions. It is difficult for you to open up to new people because of a bitter experience. People have abused your kindness to make you feel guilty, perhaps using emotional blackmail, exploiting and manipulating you, disregarding your thoughts and desires. You are only noticed when they need you, not the other way around.
+                            
+                            You only spend time with this person when he or she decides he or she wants to. It's perfectly normal for her not to respond to your messages, not to keep in touch, and never to find time for you when you need it.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 24...28,
+                        title: "You are a victim who wants to change something",
+                        description: """
+                            You are as vulnerable as a mouse. One of your characteristics is excessive shyness. You are ashamed to express your own opinions, and if you are going to do so you are afraid of how others will perceive it. Your boundaries are often respected and you don't like it, so you want to change that.
+                            
+                            Sometimes your "friends" themselves call or contact you when they are bored or you can help them with something, and once things get better, they disappear again without remorse.
+                            
+                            Your so-called "friends," who make you a victim, lay all their problems on you and constantly ask you to do something for them, even if you are busy or unwilling. They use you to banish their negative emotions. These are all red flags, which means that this person does not respect your boundaries and abuses your benevolence. Such a person usually doesn't want to give up your efforts or thank you for your attention, because everything suits them. So recognize such a "one-way street" as soon as possible and avoid such a relationship.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 29...33,
+                        title: "You know how to maintain balance",
+                        description: """
+                            Sometimes you allow others to manage your time and wishful thinking, but still, you have your own dignity and will never allow yourself to be managed by another person.
+                            
+                            You have encountered situations where friends disregarded your requests, and if you still notice this tendency, it is better to give up such a friendship: you will not receive anything, but only give up your time and energy.
+                            
+                            You are always the first to invite your friends to a meeting, take steps to maintain your relationship, and make your plans according to their wishes. You should learn to stand up for your opinions and build mutually beneficial relationships.Tip: If you feel some kind of catch in the request to you - do not agree right away, say that you need to think, consult with friends, relatives. This will give time to understand the situation and make an informed decision.
+                            
+                            And also - when you are afraid to say "no" - worrying that you might lose a friend or a girlfriend - first think about whether you need such a person who won't come to your aid when you need something.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 34...36,
+                        title: "You seem to have the makings of a predator",
+                        description: """
+                            You often don't accept limitation, even if it promises abundance, which makes you predatory. What is meant is, first of all, inner restraint. You can be characterized as a freedom-loving person who knows her own worth and will never sacrifice her favorite dress or earrings for her best friend. However, you can always find a way out of any confusing situation, find the best solution, and smooth over a burning conflict.
+                            
+                            You do everything as you want, regardless of what others think, you will not adjust to other people's circumstances or sacrifice your pleasure in favor of others - this is definitely not about your personality. You are a clear leader in partnerships and friendships that attract people to you. Most importantly, don't forget that mutual help must be on both sides if you really want to build strong friendships for years to come.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 37...38,
+                        title: "100% Predator",
+                        description: """
+                            You know exactly where you are and what you want out of life. You have no problem communicating with different people.Being a predator means not only being able to manage your life but also having the ability to subdue and lead people with charisma and charm. Such people tend to be authoritative, determined, and energetic, sometimes becoming supporters of manipulation for their own benefit.
+                            
+                            You have no fear of dependence on others. But sometimes you don't realize that you are working with people and not alone. You are not afraid to take responsibility, though you often allow for the fact that not everyone will be your true followers.A true predator strives to do things her own way and on her own time, especially if she is not interested in following stereotypes. She wants to make her own decisions and choices without looking back at the rules and prohibitions of loved ones and outsiders. If such a person is driveninto a frame, to force her to follow the rules, she will start to destroy herself. It’s like trying to keep a wild animal in a cage.
+                            """
+                    )
+                ]
             )
         ]
     }

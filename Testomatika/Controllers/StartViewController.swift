@@ -29,7 +29,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         addBackgroundImageView(quiz?.backgroundView)
         
-        descriptionLabel.font = Roboto.fetchFont(.medium, 20)
+        descriptionLabel.font = Roboto.fetchFontForCurrentDevice()
         descriptionLabel.textColor = .black
         descriptionLabel.text = self.quiz?.description
     }

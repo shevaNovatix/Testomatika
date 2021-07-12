@@ -13,14 +13,17 @@ class ContextCell: UICollectionViewCell {
 	@IBOutlet weak var shadowView: UIView!
 	@IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var comingSoonImageView: UIImageView!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
 	static let id = String(describing: ContextCell.self)
 	
 	var quiz: Quiz? {
 		didSet {
 			if let quiz = quiz {
+                
                 backgroundImageView.image = UIImage(named: quiz.backgroundItem)
 				titleLabel.text = quiz.title
+                titleLabel.font = Roboto.fetchFontForCurrentDevice()
                 titleLabel.layer.shadowColor = UIColor.black.cgColor
                 titleLabel.layer.shadowRadius = 2
                 titleLabel.layer.shadowOpacity = 1.0

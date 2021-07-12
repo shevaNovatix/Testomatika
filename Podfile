@@ -11,5 +11,6 @@ target 'Testomatika' do
   pod 'FBSDKCoreKit'
   pod 'JGProgressHUD'
   pod 'SwiftyStoreKit'
+  pod "SwiftConfettiView"
 
 end

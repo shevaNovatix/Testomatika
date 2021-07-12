@@ -17,6 +17,14 @@ struct Roboto {
         return UIFont(name: fullName, size: size) ?? UIFont.systemFont(ofSize: size)
     }
     
+    static func fetchFontForCurrentDevice() -> UIFont {
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return Roboto.fetchFont(.bold, 35)
+        } else {
+            return Roboto.fetchFont(.bold, 20)
+        }
+    }
+    
     enum Style: String {
         case black
         case blackItalic
