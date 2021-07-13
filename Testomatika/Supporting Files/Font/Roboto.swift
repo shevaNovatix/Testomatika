@@ -19,9 +19,9 @@ struct Roboto {
     
     static func fetchFontForCurrentDevice() -> UIFont {
         if UIDevice.current.userInterfaceIdiom == .pad {
-            return Roboto.fetchFont(.bold, 35)
+            return Roboto.fetchFont(.medium, 36)
         } else {
-            return Roboto.fetchFont(.bold, 20)
+            return Roboto.fetchFont(.medium, 18)
         }
     }
     

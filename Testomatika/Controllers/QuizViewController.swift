@@ -85,8 +85,8 @@ class QuizViewController: MainViewController {
 
         questions.enumerated().forEach { [weak self] index, question in
             guard let self = self else { return }
-            let view = QuestionView()
-            view.frame = CGRect(x: self.view.frame.width * CGFloat(index), y: 0, width: self.view.frame.width, height: height)
+            let rect = CGRect(x: self.view.frame.width * CGFloat(index), y: 0, width: self.view.frame.width, height: height)
+            let view = QuestionView(frame: rect, views: question.answers.count)
             view.configure(question: question)
             view.views.forEach { $0.delegate = self }
             questionsViews.append(view)

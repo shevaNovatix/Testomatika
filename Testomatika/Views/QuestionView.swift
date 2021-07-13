@@ -13,7 +13,7 @@ class QuestionView: UIView {
     
     var views = [AnswerView]()
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, views count: Int) {
         super.init(frame: frame)
         
         questionLabel.numberOfLines = 0
@@ -24,7 +24,7 @@ class QuestionView: UIView {
         
         backgroundColor = .clear
         
-        for _ in 0..<4 {
+        for _ in 0..<count {
             views.append(AnswerView())
         }
         
@@ -38,9 +38,9 @@ class QuestionView: UIView {
     func configure(question: Question) {
         questionLabel.text = question.text
         
-        if question.answers.count != views.count {
-            views.last?.isHidden = true
-        }
+//        if question.answers.count != views.count {
+//            views.last?.isHidden = true
+//        }
         
         var index = 0
         
