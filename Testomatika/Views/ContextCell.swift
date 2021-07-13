@@ -23,7 +23,7 @@ class ContextCell: UICollectionViewCell {
                 
                 backgroundImageView.image = UIImage(named: quiz.backgroundItem)
 				titleLabel.text = quiz.title
-                titleLabel.font = Roboto.fetchFontForCurrentDevice()
+                titleLabel.font = Roboto.fetchFont(.bold, 20)
                 titleLabel.layer.shadowColor = UIColor.black.cgColor
                 titleLabel.layer.shadowRadius = 2
                 titleLabel.layer.shadowOpacity = 1.0

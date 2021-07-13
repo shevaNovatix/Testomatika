@@ -19,12 +19,8 @@ struct Roboto {
         return UIFont(name: fullName, size: size) ?? UIFont.systemFont(ofSize: size)
     }
     
-    static func fetchFontForCurrentDevice() -> UIFont {
-        device == .pad ? Roboto.fetchFont(.medium, 36) : Roboto.fetchFont(.medium, 18)
-    }
-    
-    static func fetchFontForTitleView() -> UIFont {
-        device == .pad ? Roboto.fetchFont(.medium, 32) : Roboto.fetchFont(.medium, 16)
+    static func fetchFont(_ style: Style, with size: CGFloat) -> UIFont {
+        device == .pad ? Roboto.fetchFont(style, size * 2) : Roboto.fetchFont(style, size)
     }
     
     enum Style: String {

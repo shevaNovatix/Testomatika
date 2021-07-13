@@ -17,7 +17,7 @@ class QuestionView: UIView {
         super.init(frame: frame)
         
         questionLabel.numberOfLines = 0
-        questionLabel.font = UIDevice.current.userInterfaceIdiom == .pad ? Roboto.fetchFont(.bold, 44) : Roboto.fetchFont(.bold, 22)
+        questionLabel.font = Roboto.fetchFont(.bold, with: 22)
         questionLabel.textAlignment = .center
         questionLabel.textColor = .white
         questionLabel.addShadow()
@@ -37,10 +37,6 @@ class QuestionView: UIView {
     
     func configure(question: Question) {
         questionLabel.text = question.text
-        
-//        if question.answers.count != views.count {
-//            views.last?.isHidden = true
-//        }
         
         var index = 0
         

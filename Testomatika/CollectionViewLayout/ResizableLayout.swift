@@ -10,7 +10,7 @@ struct ContextCellConstants {
         UIDevice.current.userInterfaceIdiom == .pad ? 560 : 280
     }
     static var standardHeight: CGFloat {
-        UIDevice.current.userInterfaceIdiom == .pad ? 300 : 100
+        UIDevice.current.userInterfaceIdiom == .pad ? 300 : 120
     }
 }
 
