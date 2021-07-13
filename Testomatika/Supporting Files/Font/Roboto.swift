@@ -9,6 +9,8 @@ import UIKit
 
 struct Roboto {
     
+    static var device = UIDevice.current.userInterfaceIdiom
+    
     static func fetchFont(_ style: Style, _ size: CGFloat) -> UIFont {
         let name = String(describing: Roboto.self)
         let first = String(style.rawValue.prefix(1)).capitalized
@@ -18,11 +20,11 @@ struct Roboto {
     }
     
     static func fetchFontForCurrentDevice() -> UIFont {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return Roboto.fetchFont(.medium, 36)
-        } else {
-            return Roboto.fetchFont(.medium, 18)
-        }
+        device == .pad ? Roboto.fetchFont(.medium, 36) : Roboto.fetchFont(.medium, 18)
+    }
+    
+    static func fetchFontForTitleView() -> UIFont {
+        device == .pad ? Roboto.fetchFont(.medium, 32) : Roboto.fetchFont(.medium, 16)
     }
     
     enum Style: String {
