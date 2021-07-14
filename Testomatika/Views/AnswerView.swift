@@ -87,7 +87,7 @@ class AnswerView: UIView {
         textLabel.textColor = .black.withAlphaComponent(0.8)
         textLabel.numberOfLines = 0
         textLabel.translatesAutoresizingMaskIntoConstraints = false
-        textLabel.font = Roboto.fetchFont(.medium, 18)
+        textLabel.font = Roboto.fetchFont(.medium, with: 18)
         
         NSLayoutConstraint.activate([
             textLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),

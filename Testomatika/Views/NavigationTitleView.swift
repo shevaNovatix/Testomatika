@@ -12,7 +12,7 @@ class NavigationTitleView: UIView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = Roboto.fetchFont(.medium, 16)
+        label.font = Roboto.fetchFont(.medium, with: 16)
         label.numberOfLines = 0
         label.textAlignment = .center
         label.addShadow()
