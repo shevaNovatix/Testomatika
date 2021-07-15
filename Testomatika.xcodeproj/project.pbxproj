@@ -56,7 +56,6 @@
 		84A52A8B268CB5DD00DC7290 /* ContextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A52A81268CB5DD00DC7290 /* ContextCell.swift */; };
 		84C85CFA269451BB002DD513 /* DeviceSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C85CF9269451BB002DD513 /* DeviceSpecific.swift */; };
 		84C9FE4F268CBD790018EA61 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C9FE4E268CBD790018EA61 /* StoreKit.framework */; };
-		84E314D0269845C0009A8378 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E314CF269845C0009A8378 /* StarViewController.swift */; };
 		C8BF88D176988DD8AF588F40 /* Pods_Testomatika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331D156FE05E101AFBEE7D4D /* Pods_Testomatika.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +115,6 @@
 		84A52A81268CB5DD00DC7290 /* ContextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextCell.swift; sourceTree = "<group>"; };
 		84C85CF9269451BB002DD513 /* DeviceSpecific.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSpecific.swift; sourceTree = "<group>"; };
 		84C9FE4E268CBD790018EA61 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		84E314CF269845C0009A8378 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				84A52A27268CB5CE00DC7290 /* ResultViewController.swift */,
-				84E314CF269845C0009A8378 /* StarViewController.swift */,
 				84A52A28268CB5CE00DC7290 /* QuizzesCollectionViewController.swift */,
 				84A52A29268CB5CE00DC7290 /* QuizViewController.swift */,
 				84A52A2A268CB5CE00DC7290 /* MainViewController.swift */,
@@ -455,7 +452,6 @@
 				84A52A83268CB5DD00DC7290 /* QuizStorage.swift in Sources */,
 				84A52A85268CB5DD00DC7290 /* Quiz.swift in Sources */,
 				84A52A82268CB5DD00DC7290 /* Question.swift in Sources */,
-				84E314D0269845C0009A8378 /* StarViewController.swift in Sources */,
 				84184482268DAF3000C24F52 /* Extension + NSAttributedString.swift in Sources */,
 				84A52A5D268CB5CF00DC7290 /* Roboto.swift in Sources */,
 				84A52A6B268CB5CF00DC7290 /* Extension + UIViewController.swift in Sources */,

@@ -780,25 +780,175 @@ class QuizStorage {
             ),
             Quiz(
                 title: "What celebrities do you look like?",
-                description: "",
+                description: "Do you love watching the celebreties? What if we say that you look like one of them? Let’s check? Then take this test now. With its help, we will analyze your similarities with celebrities and determine which of them you most resemble. Let’s start?",
                 questions: [
-                    Question(text: "", answers: [
-                        Answer(text: "", scrore: 2),
-                        Answer(text: "", scrore: 3),
-                        Answer(text: "", scrore: 1)
+                    Question(text: "Has anyone ever compared you to a famous person?", answers: [
+                        Answer(text: "Yes, many times", scrore: 4),
+                        Answer(text: "I don’t remember", scrore: 2),
+                        Answer(text: "Only with cartoon characters", scrore: 3),
+                        Answer(text: "Only with cartoon characters", scrore: 1)
+                    ]),
+                    Question(text: "What is your style of clothing?", answers: [
+                        Answer(text: "Classic Lady", scrore: 4),
+                        Answer(text: "Sports", scrore: 2),
+                        Answer(text: "Sexual", scrore: 3),
+                        Answer(text: "Other", scrore: 1)
+                    ]),
+                    Question(text: "Choose the dominant trait of your character", answers: [
+                        Answer(text: "Kindness", scrore: 5),
+                        Answer(text: "Responsibility", scrore: 3),
+                        Answer(text: "Ingenuity", scrore: 4),
+                        Answer(text: "Sense of humor", scrore: 2),
+                        Answer(text: "Openness", scrore: 1),
+                    ]),
+                    Question(text: "What type of figure do you have?", answers: [
+                        Answer(text: "Rectangle", scrore: 5),
+                        Answer(text: "Inverted triangle", scrore: 4),
+                        Answer(text: "Sand clock", scrore: 3),
+                        Answer(text: "Pear", scrore: 2),
+                        Answer(text: "I don’t know", scrore: 1)
+                    ]),
+                    Question(text: "What is your hair color?", answers: [
+                        Answer(text: "Brown", scrore: 5),
+                        Answer(text: "Black", scrore: 4),
+                        Answer(text: "Blonde with highlights", scrore: 3),
+                        Answer(text: "Light blond", scrore: 2),
+                        Answer(text: "Red or chestnut", scrore: 1)
+                    ]),
+                    Question(text: "What is the shape of your face?", answers: [
+                        Answer(text: "Round", scrore: 4),
+                        Answer(text: "Oval", scrore: 5),
+                        Answer(text: "Hard to say", scrore: 1),
+                        Answer(text: "Rectangular", scrore: 2),
+                        Answer(text: "Heart-shaped", scrore: 3)
+                    ]),
+                    Question(text: "What color are your eyes?", answers: [
+                        Answer(text: "Dark brown", scrore: 1),
+                        Answer(text: "Green", scrore: 2),
+                        Answer(text: "Blue", scrore: 3)
+                    ]),
+                    Question(text: "How many guys did you have?", answers: [
+                        Answer(text: "Several, maximum 4", scrore: 3),
+                        Answer(text: "2-3", scrore: 4),
+                        Answer(text: "5-7", scrore: 2),
+                        Answer(text: "About 10", scrore: 1),
+                        Answer(text: "1-2", scrore: 5),
+                    ]),
+                    Question(text: "You are:", answers: [
+                        Answer(text: "Tall", scrore: 3),
+                        Answer(text: "Average growth", scrore: 2),
+                        Answer(text: "Short", scrore: 1)
+                    ]),
+                    Question(text: "What is your main advantage?", answers: [
+                        Answer(text: "Good appearance", scrore: 4),
+                        Answer(text: "Artistry, charisma", scrore: 2),
+                        Answer(text: "Good vocals", scrore: 3),
+                        Answer(text: "Sports data", scrore: 1)
+                    ]),
+                    Question(text: "Which of these outstanding women is an icon for you?", answers: [
+                        Answer(text: "Coco Chanel", scrore: 2),
+                        Answer(text: "Marilyn Monroe", scrore: 3),
+                        Answer(text: "Audrey Hepburn", scrore: 1),
+                        Answer(text: "Princess Diana", scrore: 4)
+                    ]),
+                    Question(text: "What do you like most about yourself?", answers: [
+                        Answer(text: "Eyes", scrore: 4),
+                        Answer(text: "Lips", scrore: 3),
+                        Answer(text: "Neat nose", scrore: 2),
+                        Answer(text: "Cheeks", scrore: 1)
+                    ]),
+                    Question(text: "Are you interested in news about the world of stars?", answers: [
+                        Answer(text: "So very often! I like to gossip", scrore: 5),
+                        Answer(text: "Yes, but mostly about the world of movies and TV series", scrore: 4),
+                        Answer(text: "I like colorful photos and photo shoots", scrore: 2),
+                        Answer(text: "That is not exactly my atmosphere", scrore: 1),
+                        Answer(text: "I prefer watching TV shows or interesting podcasts", scrore: 3)
+                    ]),
+                    Question(text: "What is your favorite hairstyle?", answers: [
+                        Answer(text: "High tail", scrore: 4),
+                        Answer(text: "Curls", scrore: 3),
+                        Answer(text: "Long straight hair", scrore: 2),
+                        Answer(text: "Square", scrore: 1)
+                    ]),
+                    Question(text: "The movie you want to star in is ...", answers: [
+                        Answer(text: "Romantic comedy", scrore: 5),
+                        Answer(text: "Crime", scrore: 4),
+                        Answer(text: "Sensational, action", scrore: 3),
+                        Answer(text: "I don’t know", scrore: 1),
+                        Answer(text: "Other", scrore: 2)
+                    ]),
+                    Question(text: "What are the most shades of clothing that predominate in your wardrobe?", answers: [
+                        Answer(text: "Oh! You surprised me with this question!", scrore: 4),
+                        Answer(text: "I like black, but all colors work for me", scrore: 3),
+                        Answer(text: "I don't know, I have a lot of clothes and I don't pay much attention to their shade", scrore: 2),
+                        Answer(text: "Clothing color is not the most important thing!", scrore: 1)
+                    ]),
+                    Question(text: "What animal are you equated to", answers: [
+                        Answer(text: "Cat", scrore: 4),
+                        Answer(text: "Swan", scrore: 3),
+                        Answer(text: "I look like myself", scrore: 1),
+                        Answer(text: "To the cheetah", scrore: 2)
+                    ]),
+                    Question(text: "How do you like to spend your free time?", answers: [
+                        Answer(text: "In the gym", scrore: 1),
+                        Answer(text: "With a book on the couch, near the TV", scrore: 5),
+                        Answer(text: "With friends, at invited parties, at the movies, in cafes", scrore: 4),
+                        Answer(text: "On a date with a loved one", scrore: 2),
+                        Answer(text: "Outdoors", scrore: 3)
+                    ]),
+                    Question(text: "Who did you dream of being like as a child?", answers: [
+                        Answer(text: "My mother", scrore: 4),
+                        Answer(text: "A movie actress", scrore: 3),
+                        Answer(text: "A famous athlete", scrore: 2),
+                        Answer(text: "Another option", scrore: 1)
+                    ]),
+                    Question(text: "What is the most important thing in your life?", answers: [
+                        Answer(text: "Family", scrore: 4),
+                        Answer(text: "Career", scrore: 3),
+                        Answer(text: "Travel", scrore: 2),
+                        Answer(text: "Success", scrore: 1)
                     ])
                 ],
                 backgroundItem: "7",
                 backgroundView: "77",
-                isOpen: false,
+                isOpen: true,
                 responseRanges: [
                     ResponseRanges(
-                        range: 47...53,
-                        title: "",
+                        range: 20...35,
+                        title: "Emma Stone",
                         description: """
-                            ffd
+                            Your answers to the test showed that you have a lot in common with one of the highest-paid American actresses - Emma Stone. You have a very unusual type of beauty, which is combined with the original character, a good figure, and a sense of humor. Such girls are a waterfall of emotions. You are sometimes crazy, and sometimes you are silent. You adore the attention of others at various events and parties, but often try to avoid unnecessary looks, because you do not like when you are discussed.
+                            
+                            You focus not on yourself, but on what you can do - this is your disadvantage. Sometimes you should pay more time and attention to yourself because you are unique and unique. However, the extraordinary is not only one of your best sides, but you also have a lot of talent! You have incredible potential, it is a pity that you do not fully realize that you are worth something more, whether in a career or, for example, a relationship. Show your femininity more often - not only during "big appearances" in public. Take the initiative and strive for the best, because you deserve it!
                             """
                     ),
+                    ResponseRanges(
+                        range: 36...49,
+                        title: "Jennifer Lopez",
+                        description: """
+                            You are a self-conscious attractive blonde. Your special character traits are a commitment toany sphere of life and an ambitious approach to many issues. No one will be able to deceive you, because you are not one of those naive girls, you can easily overcome all the difficultiesand obstacles of life and get to the desired goal. You are loved and appreciated by both menand women.
+                            
+                            You are followed because of your style, appearance, and energy, which will not leave anyone indifferent. You know the secrets of seduction that you use to attract the attention of the opposite sex. You like to take care of yourself and emphasize your strengths.You spend a lot of time in the gym, so you have a good figure. You do not give a second chance to people who did not live up to your expectations, you always go one step ahead of your surroundings. However, the steel character needs to be weakened sometimes, for example in a relationship with a man, because excessive responsibility can lead to emotionalburnout.
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 50...69,
+                        title: "Mila Kunis",
+                        description: """
+                            You have the most similarities with the American actress of Jewish origin Mila Kunis.You are a slender, attractive, and resourceful brunette, and have forest green eyes and very girlish features. Your distinguishing features are a slender figure and medium or tall stature. You like the sporty, casual style and freedom.
+                            
+                            You always remain yourself in any situation, you do not care about criticism, because you know well what priorities are most important to you in life. Your relatives are counting on you because you have good career potential. You are all about family; the opinion of the family is the main thing for you. You often listen to them, but we advise you to make serious decisions more often without strangers, so there is a better chance for your happy future. No one but you knows how and with whom you will bebetter. So don’t pay attention to others and listen to your heart!
+                            """
+                    ),
+                    ResponseRanges(
+                        range: 70...86,
+                        title: "Jennifer Lawrence",
+                        description: """
+                            So much energy and motivation you have! You have an attractive appearance and a beautiful figure; men literally grind away from you. You are open and spontaneous. You love adventure, so it's easy for you to pack your bags and fly to the other side of the world for new emotions. You have your own style, though, and you usually don't pay attention to otherpeople's looks and opinions. You are distinguished by loud laughter and a sense of humor.
+                            
+                            You are a very sociable blonde, you have many friends and acquaintances. Most likely you have deep blue eyes, from which it is impossible to take your eyes off. However, the stereotype about stupid blondes is definitely not about you. You are well-read and have strong leadership qualities. Although you love loud parties surrounded by big crowds, you also do not mind spending a quiet evening alone, for example, with a book or TV. American actress Jennifer Lawrence, known for her roles in the films "The Hunger Games" and "American Scam" also fits this description!
+                            """
+                    )
                 ]
             ),
             Quiz(
@@ -940,7 +1090,260 @@ class QuizStorage {
                             """
                     )
                 ]
-            )
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
+            Quiz(
+                title: "",
+                description: "",
+                questions: [
+                    Question(text: "", answers: [
+                        Answer(text: "", scrore: 2),
+                        Answer(text: "", scrore: 3),
+                        Answer(text: "", scrore: 1)
+                    ])
+                ],
+                backgroundItem: "9",
+                backgroundView: "99",
+                isOpen: false,
+                responseRanges: [
+                    ResponseRanges(
+                        range: 0...1,
+                        title: "",
+                        description: """
+                            ffd
+                            """
+                    ),
+                ]
+            ),
         ]
     }
 }

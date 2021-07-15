@@ -23,7 +23,7 @@ class ContextCell: UICollectionViewCell {
                 
                 backgroundImageView.image = UIImage(named: quiz.backgroundItem)
 				titleLabel.text = quiz.title
-                titleLabel.font = Roboto.fetchFont(.bold, with: 20)
+                titleLabel.font = Roboto.fetchFont(.bold, with: 22)
                 titleLabel.layer.shadowColor = UIColor.black.cgColor
                 titleLabel.layer.shadowRadius = 2
                 titleLabel.layer.shadowOpacity = 1.0
@@ -50,7 +50,7 @@ class ContextCell: UICollectionViewCell {
 		
 		let scale = max(delta, 0.5)
 		titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
-//        comingSoonImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
+        comingSoonImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
 		shadowView.alpha = maxAlpha - delta * (maxAlpha - minAlpha)
 	}
 }

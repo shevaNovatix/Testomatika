@@ -17,7 +17,7 @@ extension NSAttributedString {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = .center
         
-        let font = Roboto.fetchFont(.regular, 15)
+        let font = Roboto.fetchFont(.regular, with: 15)
         
         let color = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let attributes: [NSAttributedString.Key: Any] = [.font: font,
@@ -47,6 +47,6 @@ extension NSAttributedString {
     
     static func linkAttributes() -> [NSAttributedString.Key: Any] {
         let color = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        return [.font: Roboto.fetchFont(.regular, 15), .foregroundColor: color]
+        return [.font: Roboto.fetchFont(.regular, with: 15), .foregroundColor: color]
     }
 }

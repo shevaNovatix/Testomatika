@@ -111,7 +111,6 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
-  - SwiftConfettiView (0.1.0)
   - SwiftyStoreKit (0.16.1)
   - UIWindowTransitions (1.0.0)
 
@@ -122,7 +121,6 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/RemoteConfig
   - JGProgressHUD
-  - SwiftConfettiView
   - SwiftyStoreKit
   - UIWindowTransitions
 
@@ -144,7 +142,6 @@ SPEC REPOS:
     - JGProgressHUD
     - nanopb
     - PromisesObjC
-    - SwiftConfettiView
     - SwiftyStoreKit
     - UIWindowTransitions
 
@@ -165,10 +162,9 @@ SPEC CHECKSUMS:
   JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  SwiftConfettiView: 1bdbc2e6913b6b1c76d8070802b212508ad5c352
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   UIWindowTransitions: 2237083382e11f100db7de934041bba0c4669c86
 
-PODFILE CHECKSUM: f487cef3a575d014278aaea8706ac37f484a29de
+PODFILE CHECKSUM: f097c7297ec27ae0f0ad4c970178c38d042ba321
 
 COCOAPODS: 1.10.1

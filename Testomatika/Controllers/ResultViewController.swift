@@ -23,6 +23,7 @@ class ResultViewController: UIViewController{
         contentView.layer.cornerRadius = 30
         contentView.layer.cornerCurve = .continuous
         
+        titleLabel.font = Roboto.fetchFont(.bold, 30)
         titleLabel.textColor = .white
         titleLabel.addShadow()
         
@@ -37,7 +38,9 @@ class ResultViewController: UIViewController{
         ]
         gradient.delegate = self
         gradient.locations = [0, 0, 0.9, 1]
+        
         textView.layer.mask = gradient
+        textView.font = Roboto.fetchFont(.medium, 20)
         
         navigationItem.hidesBackButton = true
     }
