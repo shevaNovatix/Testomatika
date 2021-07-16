@@ -43,9 +43,9 @@ class AutoRenewableViewController: MainViewController {
         textView.linkTextAttributes = NSAttributedString.linkAttributes()
         
         subscribeLabel.addShadow()
-        subscribeLabel.font = Roboto.fetchFont(.regular, 15)
+        subscribeLabel.font = Roboto.fetchFont(.regular, with: 15)
         descriptionLabel.addShadow()
-        descriptionLabel.font = Roboto.fetchFont(.medium, 20)
+        descriptionLabel.font = Roboto.fetchFont(.medium, with: 20)
     
         AppEvents.logEvent(.initiatedCheckout)
         Analytics.logEvent("initiatedCheckout", parameters: nil)

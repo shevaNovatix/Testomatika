@@ -34,7 +34,7 @@ class ConsumableViewController: MainViewController {
         textView.attributedText = NSAttributedString.textViewText()
         textView.linkTextAttributes = NSAttributedString.linkAttributes()
         
-        descriptionLabel.font = Roboto.fetchFont(.regular, 18)
+        descriptionLabel.font = Roboto.fetchFont(.regular, with: 18)
         descriptionLabel.addShadow()
         configureUI()
     }
