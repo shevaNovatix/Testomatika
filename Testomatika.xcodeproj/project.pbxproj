@@ -56,6 +56,7 @@
 		84A52A8B268CB5DD00DC7290 /* ContextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A52A81268CB5DD00DC7290 /* ContextCell.swift */; };
 		84C85CFA269451BB002DD513 /* DeviceSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C85CF9269451BB002DD513 /* DeviceSpecific.swift */; };
 		84C9FE4F268CBD790018EA61 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C9FE4E268CBD790018EA61 /* StoreKit.framework */; };
+		84E5DFF826A577040093E147 /* BigQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5DFF726A577040093E147 /* BigQuizViewController.swift */; };
 		C8BF88D176988DD8AF588F40 /* Pods_Testomatika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331D156FE05E101AFBEE7D4D /* Pods_Testomatika.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		84A52A81268CB5DD00DC7290 /* ContextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextCell.swift; sourceTree = "<group>"; };
 		84C85CF9269451BB002DD513 /* DeviceSpecific.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSpecific.swift; sourceTree = "<group>"; };
 		84C9FE4E268CBD790018EA61 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		84E5DFF726A577040093E147 /* BigQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				84A52A2D268CB5CE00DC7290 /* AutoRenewableViewController.swift */,
 				84A52A2E268CB5CE00DC7290 /* ConsumableViewController.swift */,
 				84A52A2F268CB5CE00DC7290 /* NavigationController.swift */,
+				84E5DFF726A577040093E147 /* BigQuizViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				84A52A89268CB5DD00DC7290 /* ProgressBar.swift in Sources */,
 				84A52A13268CB56A00DC7290 /* AppDelegate.swift in Sources */,
 				84A52A59268CB5CF00DC7290 /* AutoRenewableViewController.swift in Sources */,
+				84E5DFF826A577040093E147 /* BigQuizViewController.swift in Sources */,
 				84A52A6E268CB5CF00DC7290 /* ResizableLayout.swift in Sources */,
 				84A52A6C268CB5CF00DC7290 /* Extension + UIStoryboard.swift in Sources */,
 				84A52A74268CB5CF00DC7290 /* CurrentTimeRequest.swift in Sources */,

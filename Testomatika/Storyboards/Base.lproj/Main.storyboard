@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="117"/>
+            <point key="canvasLocation" x="2005.7971014492755" y="116.51785714285714"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="ioE-6d-N0D">
@@ -537,6 +537,83 @@ You love the thrill of male and female role-play, so you always need to renew an
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmb-x6-Nmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-536.231884057971" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V1I-TR-4AG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RlP-OZ-Ix0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BW5-4x-pJ9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9SZ-HF-6GO" kind="relationship" relationship="rootViewController" id="lqf-UN-Rh6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJT-l0-7iz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005.7971014492755" y="-575.22321428571422"/>
+        </scene>
+        <!--Big Quiz View Controller-->
+        <scene sceneID="Hvh-0f-ihh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="9SZ-HF-6GO" customClass="BigQuizViewController" customModule="Testomatika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hzy-ug-R4y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozd-Mq-DiE" customClass="MainButton" customModule="Testomatika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="i8s-r6-OLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Previous"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVG-XT-vKn">
+                                <rect key="frame" x="0.0" y="128" width="414" height="664"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9SZ-HF-6GO" id="Ncj-Js-Ofx"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-77-fCc" customClass="ProgressBar" customModule="Testomatika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="98" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oKs-P6-ndq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xAU-vZ-aUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KVG-XT-vKn" firstAttribute="leading" secondItem="xAU-vZ-aUk" secondAttribute="leading" id="2UU-Mx-86C"/>
+                            <constraint firstItem="Ozd-Mq-DiE" firstAttribute="top" secondItem="KVG-XT-vKn" secondAttribute="bottom" id="38N-Yl-qbt"/>
+                            <constraint firstItem="xAU-vZ-aUk" firstAttribute="trailing" secondItem="zTo-77-fCc" secondAttribute="trailing" constant="20" id="3BJ-ev-QNB"/>
+                            <constraint firstItem="zTo-77-fCc" firstAttribute="top" secondItem="xAU-vZ-aUk" secondAttribute="top" constant="10" id="A79-r3-RJN"/>
+                            <constraint firstItem="Ozd-Mq-DiE" firstAttribute="leading" secondItem="xAU-vZ-aUk" secondAttribute="leading" constant="20" id="DNK-ek-Tul"/>
+                            <constraint firstItem="KVG-XT-vKn" firstAttribute="top" secondItem="zTo-77-fCc" secondAttribute="bottom" id="Iaf-qu-fbf"/>
+                            <constraint firstItem="KVG-XT-vKn" firstAttribute="trailing" secondItem="xAU-vZ-aUk" secondAttribute="trailing" id="Rf9-bI-60Y"/>
+                            <constraint firstItem="zTo-77-fCc" firstAttribute="leading" secondItem="xAU-vZ-aUk" secondAttribute="leading" constant="20" id="Y76-pv-WcX"/>
+                            <constraint firstItem="xAU-vZ-aUk" firstAttribute="bottom" secondItem="Ozd-Mq-DiE" secondAttribute="bottom" constant="20" id="igB-Nt-nlh"/>
+                            <constraint firstItem="xAU-vZ-aUk" firstAttribute="trailing" secondItem="Ozd-Mq-DiE" secondAttribute="trailing" constant="20" id="xCO-Wc-H1k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uY7-se-k6m">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="KXB-Me-L3E"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="endQiuzBarButtonItem" destination="KXB-Me-L3E" id="3JP-Iq-HXi"/>
+                        <outlet property="previousButton" destination="Ozd-Mq-DiE" id="Jrp-Kg-js5"/>
+                        <outlet property="progressBar" destination="zTo-77-fCc" id="D5r-5H-tNr"/>
+                        <outlet property="scrollView" destination="KVG-XT-vKn" id="nF7-ae-RwI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGe-lY-t7T" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2899" y="-575"/>
         </scene>
     </scenes>
     <resources>
