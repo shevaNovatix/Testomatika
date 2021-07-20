@@ -5,12 +5,34 @@
 
 import UIKit
 
+
 struct ContextCellConstants {
+    
+    static let standardHeightForIphone: CGFloat = 120
+    static let featuredHeightForIphone: CGFloat = 280
+    
+    static let standardHeightForIpad: CGFloat = 300
+    static let featuredHeightForIpad: CGFloat = 560
+    
     static var featuredHeight: CGFloat {
         UIDevice.current.userInterfaceIdiom == .pad ? 560 : 280
     }
     static var standardHeight: CGFloat {
         UIDevice.current.userInterfaceIdiom == .pad ? 300 : 120
+    }
+    
+    static var differentHeight: CGFloat {
+        UIDevice.current.userInterfaceIdiom == .pad
+            ? differentHeightForIpad
+            : differentHeightForIphone
+    }
+    
+    static var differentHeightForIphone: CGFloat {
+        featuredHeightForIphone - standardHeight
+    }
+    
+    static var differentHeightForIpad: CGFloat {
+        featuredHeightForIpad - standardHeightForIpad
     }
 }
 

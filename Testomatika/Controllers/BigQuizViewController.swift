@@ -32,7 +32,7 @@ class BigQuizViewController: UIViewController {
     private var questionsViews = [QuestionView]()
     
     private var progressValue: CGFloat {
-        1 / CGFloat(questions.count)
+        0
     }
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class BigQuizViewController: UIViewController {
         
         questions = quiz?.questions ?? []
         
-        progressBar.textLayer.string = "\(currentPage + 1) / \(questions.count)"
+        progressBar.textLayer.string = "0%"
         progressBar.progress = progressValue
         
         configureNavigationItem()
@@ -111,7 +111,7 @@ extension BigQuizViewController: UIScrollViewDelegate {
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         if isScrollForward {
             progressBar.progress += progressValue
-            progressBar.textLayer.string = "\(currentPage + 1) / \(questions.count)"
+            progressBar.textLayer.string = "\(currentPage)%"
         }
     }
 }

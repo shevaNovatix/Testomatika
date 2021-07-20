@@ -78,6 +78,7 @@ class ConsumableViewController: MainViewController {
     }
     
     @IBAction func dismissAction(_ sender: UIBarButtonItem) {
+        Analytics.logEvent("CloseConsumablePurchase", parameters: nil)
         setMainViewController()
     }
     
