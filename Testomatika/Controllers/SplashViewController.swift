@@ -32,13 +32,12 @@ class SplashViewController: MainViewController {
         let index = RemoteConfigService.shared.int(forKey: .startVC)
         Analytics.logEvent("Quiz_\(index)", parameters: nil)
         
-        if index == 00 {
+        if index == 99 {
             setMainViewController()
-            return
+        } else {
+            let quiz = QuizStorage.quizzes[index]
+            UserDefaultsManager.shared.currentQuiz = quiz
+            setStartViewController()
         }
-        
-        let quiz = QuizStorage.quizzes[index]
-        UserDefaultsManager.shared.currentQuiz = quiz
-        setStartViewController()
     }
 }

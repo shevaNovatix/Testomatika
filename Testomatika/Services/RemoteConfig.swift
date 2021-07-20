@@ -25,8 +25,8 @@ class RemoteConfigService {
     
     func loadDefaultValues() {
         let appDefaults: [String: Any?] = [
-            RemoteConfigValues.subscriptionProduct.rawValue: IAPProducts.autoRenewable.rawValue,
-            RemoteConfigValues.startVC.rawValue: 00
+            RemoteConfigValues.subscriptionProduct.rawValue: IAPProducts.autoRenewable.rawValue
+//            RemoteConfigValues.startVC.rawValue: 00
         ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])
     }
